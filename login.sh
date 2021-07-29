@@ -9,14 +9,15 @@ echo -e "\e[1;30m
 echo -e ""
 echo -e ""
 echo -e ""
-echo -e "\e[1;30m┌══════════════════════════┐
-█\e[1;32m INSTALLATION OF PACKAGES \e[1;30m█
-└══════════════════════════┘
+sleep 0.5
+echo -e "\e[1;30m┌═══════════════════════════════════════════┐
+█\e[1;32m COMENZANDO CON LA INSTALACIÓN DE PAQUETES \e[1;30m█
+└═══════════════════════════════════════════┘
 
 
-\e[1;30m┌══════════════════════════════┐
-█\e[1;32m UPDATING DATA IN PACKAGES... \e[1;30m█
-└══════════════════════════════┘\e[0m"
+\e[1;30m┌══════════════════════════┐
+█\e[1;32m ACTUALIZANDO PAQUETES... \e[1;30m█
+└══════════════════════════┘\e[0m"
 echo -e ""
 pkg update
 pkg upgrade
@@ -441,10 +442,23 @@ echo -e ""
 pkg install -y pip
 pkg install -y pip2
 pkg install -y pip3
+clear
+sleep 0.5
+echo -e "
+\e[1;30m┌═══════════════════════════════════┐
+█\e[1;32m INSTALACIÓN DE PAQUETES TERMINADO \e[1;30m█
+└═══════════════════════════════════┘\e[0m"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+sleep 0.5
+echo -e ""
 cd $HOME
-echo -e "\e[1;30m┌═════════════════════════════┐
-█\e[1;32m BEGINNING TOOL INSTALLATION \e[1;30m█
-└═════════════════════════════┘
+echo -e "\e[1;30m┌═══════════════════════════════════════════┐
+█\e[1;32m COMENZANDO LA INSTALACIÓN DE HERRAMIENTAS \e[1;30m█
+└═══════════════════════════════════════════┘
 
 
 \e[1;30m┌═════════════┐
@@ -1261,6 +1275,11 @@ apt install python
 apt install python2
 pip2 install colorama
 chmod +x main_linux.py
+echo -e ""
+echo -e "
+\e[1;30m┌═══════════════════════════════════════┐
+█\e[1;32m INSTALACIÓN DE HERRAMIENTAS TERMINADO \e[1;30m█
+└═══════════════════════════════════════┘\e[0m"
 clear
 #!/bim/bash
 cp login.sh $PREFIX/etc
@@ -1275,7 +1294,6 @@ pip install lolcat
 #!/data/data/com.termux/usr/bin/bash
 clear
 echo -e "
-echo -e "
 \e[1;32m█░▒█ █▀▀█ █▀▀ █░█ ░▀░ █▀▀▄ █▀▀▀\e[1;30m ░░ █░░░ █▀▀█ █▀▀▄
 \e[1;32m█▀▀█ █▄▄█ █░░ █▀▄ ▀█▀ █░░█ █░▀█\e[1;30m ▀▀ █░░░ █▄▄█ █▀▀▄
 \e[1;32m█░▒█ ▀░░▀ ▀▀▀ ▀░▀ ▀▀▀ ▀░░▀ ▀▀▀▀\e[1;30m ░░ █▄▄█ ▀░░▀ ▀▀▀░
@@ -1285,15 +1303,15 @@ echo -e "
 [+] Telegram: https://t.me/Informatic_in_Termux
 \e[0m"
 read -p $'\e[1;30m
-┌════════════════════════════┐
-█\e[1;37m  CREATE USERNAME TO LOGIN  \e[1;30m█
-└════════════════════════════┘
+┌════════════════════════┐
+█\e[1;37m    ELIJA UN USUARIO    \e[1;30m█
+└════════════════════════┘
 ┃
 └═>>>\e[1;32m ' username
 read -p $'\e[1;30m
-┌════════════════════════════┐
-█\e[1;37m  CREATE PASSWORD TO LOGIN  \e[1;30m█
-└════════════════════════════┘
+┌════════════════════════┐
+█\e[1;37m  ELIJA UNA CONTRACEÑA  \e[1;30m█
+└════════════════════════┘
 ┃
 └═>>>\e[1;32m ' password
 cd 
@@ -1340,7 +1358,7 @@ echo -e "\e[1;30m║\e[1;32m            III             I                I  IPI 
 sleep 0.1
 echo -e "\e[1;30m║\e[1;32m             II       \e[1;30m[\e[1;31m+\e[1;30m] \e[1;37mHacking \e[1;30m[\e[1;31m+\e[1;30m]\e[1;32m        D   .    \e[1;30m║\e[1;32m"
 sleep 0.1
-echo -e "\e[1;30m║\e[1;32m             I            \e[1;33mEthical\e[1;32m                     \e[1;30m║\e[1;32m"
+echo -e "\e[1;30m║\e[1;32m             I             \e[1;33mÉtico\e[1;32m                      \e[1;30m║\e[1;32m"
 sleep 0.1
 echo -e "\e[1;30m║\e[1;32m                                                      \e[1;30m║\e[1;32m"
 sleep 0.1
@@ -1350,16 +1368,23 @@ echo -e "\e[1;30m╚════════════════════
 sleep 0.1
 echo -e ""
 read -p $'\e[1;30m
-┌═════════════════════════════════════════┐
-█\e[1;37m   >>>\e[1;32m ACCESS KEY TO START SECTION\e[1;37m <<<   \e[1;30m█
-└═════════════════════════════════════════┘\n┃\n└═>>> \e[1;37m●\e[1;32m ' user
-read -s -p $'\e[1;30m┃\n└═>>>\e[1;37m ●\e[1;32m ' pass
+┌═══════════════════════════════┐
+█\e[1;37m   >>>\e[1;32m INGRESE SU USUARIO\e[1;37m <<<  \e[1;30m█
+└═══════════════════════════════┘\n┃\n└═>>> \e[1;37m●\e[1;32m ' user
+echo -e ''
+read -s -p $'\e[1;30m
+┌═══════════════════════════════┐
+█\e[1;37m >>>\e[1;32m INGRESE SU CONTRACEÑA\e[1;37m <<< \e[1;30m█
+└═══════════════════════════════┘\n┃\n└═>>>\e[1;37m ●\e[1;32m ' pass
 if [[ \$pass == $password && \$user == $username ]]; then
 echo -e "\e[1;32m\e[0m"
 echo -e "\e[1;32m\e[0m"
-sleep 0.5
-echo -e "\e[1;32m[\e[1;37m██████████████████████████████████\e[1;32m]" | pv -qL 45
-echo -e "\e[1;30m\n            LOADING..."
+sleep 1
+echo -e ''
+echo -e "\e[1;30m┌══════════════════════════════════┐"
+echo -e "█ \e[1;32m████████████████████████████████ \e[1;30m█ 100%" |pv -qL 45
+echo -e "└══════════════════════════════════┘"
+echo -e ""
 clear
 echo -e ""
 sleep 0.5
@@ -1454,9 +1479,9 @@ shopt -s lithist
 else
 echo ""
 echo -e "\e[1;31m
-┌═════════════════════════════════════════════┐
-█ \e[1;32m>>>\e[1;37m ACCESS DENIED CLOSING THE TERMINAL! \e[1;32m<<< \e[1;31m█
-└═════════════════════════════════════════════┘
+┌═══════════════════════════════════════════════┐
+█ \e[1;32m>>>\e[1;37m ACCESO DENEGADO CERRANDO LA TERMINAL! \e[1;32m<<< \e[1;31m█
+└═══════════════════════════════════════════════┘
 \e[0m"
 sleep 3
 exit
@@ -1464,6 +1489,7 @@ fi
 trap 2
 LOGIN
 echo -e "\e[1;30m
-┌════════════════════════════════┐
-█ \e[1;37mCLOSE AND RE-OPEN THE TERMINAL\e[1;30m █
-└════════════════════════════════┘\e[0m"
+┌═══════════════════════════════════┐
+█ \e[1;32m      INSTALACIÓN CONCLUIDA\e[1;30m       █
+█ \e[1;32mCIERRE Y VUELVA ABRIR LA TERMINAL\e[1;30m █
+└═══════════════════════════════════┘\e[0m"
