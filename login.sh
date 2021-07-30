@@ -24,7 +24,7 @@ echo -e "
 └══════════════════════════┘\e[0m"
 echo -e ""
 pkg update
-pkg upgrade
+pkg upgrade -y
 echo -e "
 \e[1;30m┌═══════════┐
 █\e[1;32m PYTHON... \e[1;30m█
