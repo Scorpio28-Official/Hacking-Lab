@@ -1531,7 +1531,7 @@ shopt -s direxpand
 shopt -s compat43
 shopt -s compat32
 shopt -s lithist
-else
+else 0.5
 echo ""
 echo -e "\e[1;31m
 ┌═══════════════════════════════════════════════┐
